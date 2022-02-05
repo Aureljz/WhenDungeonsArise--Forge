@@ -1,0 +1,2 @@
+LICENSE.ARR (All Rights Reserved) is for ASSETS AND DATA exclusively.
+LICENSE.MIT (MIT License) is for CODE exclusively.

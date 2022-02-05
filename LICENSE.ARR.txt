@@ -1,0 +1,2 @@
+Copyright (c) 2022, Aurelj. All Rights Reserved unless otherwise explicitly stated.
+This licence encompasses this software's DATA AND ASSETS exclusively (src/main/resources/*).

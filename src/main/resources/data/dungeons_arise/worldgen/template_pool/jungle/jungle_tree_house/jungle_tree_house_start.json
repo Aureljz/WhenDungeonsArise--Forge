@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:jungle/jungle_tree_house/jungle_tree_house_main",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:jungle_tree_house/jungle_tree_house_0_main",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

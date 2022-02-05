@@ -1,0 +1,24 @@
+{
+  "name": "dungeons_arise:bandit/bandit_towers/bandit_towers_bridges",
+  "fallback": "dungeons_arise:bandit/bandit_towers/bandit_towers_terminators",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_towers/bandit_towers_crossing_3_bridge",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:bandit_towers/bandit_towers_crossing_4_bridge_mini",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

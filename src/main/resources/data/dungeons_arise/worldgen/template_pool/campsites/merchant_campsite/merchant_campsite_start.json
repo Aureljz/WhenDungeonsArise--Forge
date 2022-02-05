@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:campsites/merchant_campsite/merchant_campsite_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:merchant_campsite/merchant_campsite_street_4_main",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

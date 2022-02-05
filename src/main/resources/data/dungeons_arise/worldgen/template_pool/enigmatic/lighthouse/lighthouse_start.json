@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:enigmatic/lighthouse/lighthouse_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:lighthouse/lighthouse_part_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

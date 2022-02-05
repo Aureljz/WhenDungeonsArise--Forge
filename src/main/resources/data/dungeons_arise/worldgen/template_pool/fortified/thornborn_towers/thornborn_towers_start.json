@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:fortified/thornborn_towers/thornborn_towers_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:thornborn_towers/thornborn_towers_part_0_main",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

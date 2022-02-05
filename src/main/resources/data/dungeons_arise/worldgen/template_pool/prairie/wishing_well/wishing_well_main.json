@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:prairie/wishing_well/wishing_well_main",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:wishing_well/wishing_well_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

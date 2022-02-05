@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:underworld/foundry/foundry_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:foundry/foundry_crossing_start_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

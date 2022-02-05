@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:underworld/foundry/foundry_corridor_terminators",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "dungeons_arise:foundry/foundry_corridor_terminator_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

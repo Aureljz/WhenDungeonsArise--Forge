@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:prairie/fishing_hut/fishing_hut_main",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:fishing_hut/fishing_hut_main",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

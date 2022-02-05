@@ -1,0 +1,15 @@
+{
+  "name": "dungeons_arise:fortified/illager_hall/illager_hall_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "dungeons_arise:illager_hall/illager_hall_tower_roof_part_0",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
