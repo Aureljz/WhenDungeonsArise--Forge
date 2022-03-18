@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "dungeons_arise:prairie/fishing_hut/fishing_hut_main",
+    "size": 2
+  },
+  "biomes": "#dungeons_arise:has_structure/fishing_hut_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+
+  }
+}

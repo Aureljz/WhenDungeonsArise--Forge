@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "dungeons_arise:aquatic/undead_pirate_ship/undead_pirate_ship_main",
+    "size": 2
+  },
+  "biomes": "#dungeons_arise:has_structure/undead_pirate_ship_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+
+  }
+}

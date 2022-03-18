@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "dungeons_arise:aquatic/illager_galley/illager_galley_main",
+    "size": 2
+  },
+  "biomes": "#dungeons_arise:has_structure/illager_galley_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+
+  }
+}

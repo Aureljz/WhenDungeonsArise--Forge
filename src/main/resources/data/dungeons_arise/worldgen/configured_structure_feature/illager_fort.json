@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "dungeons_arise:fortified/illager_fort/illager_fort_main",
+    "size": 2
+  },
+  "biomes": "#dungeons_arise:has_structure/illager_fort_biomes",
+  "adapt_noise": true,
+  "spawn_overrides": {
+
+  }
+}

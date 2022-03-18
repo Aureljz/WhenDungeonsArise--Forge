@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "dungeons_arise:prairie/coliseum/coliseum_start",
+    "size": 2
+  },
+  "biomes": "#dungeons_arise:has_structure/coliseum_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "dungeons_arise:haunted/plague_asylum/plague_asylum_start",
+    "size": 2
+  },
+  "biomes": "#dungeons_arise:has_structure/plague_asylum_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+
+  }
+}

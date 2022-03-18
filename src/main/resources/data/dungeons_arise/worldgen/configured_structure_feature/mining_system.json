@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "dungeons_arise:underworld/mining_system/mining_system_main",
+    "size": 2
+  },
+  "biomes": "#dungeons_arise:has_structure/mining_system_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "dungeons_arise:eerie/aviary/aviary_start",
+    "size": 2
+  },
+  "biomes": "#dungeons_arise:has_structure/aviary_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:phantom",
+          "weight": 60,
+          "minCount": 2,
+          "maxCount": 3
+        }
+      ]
+    }
+  }
+}
