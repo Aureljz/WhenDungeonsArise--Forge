@@ -113,11 +113,16 @@ public class DungeonsAriseMain {
 
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "dungeons_arise";
-    public static net.aurelj.dungeons_arise.config.WDAConfig.WDAConfigValues WDAConfig = null;
+    // public static net.aurelj.dungeons_arise.config.WDAConfig.WDAConfigValues WDAConfig = null;
 
     public DungeonsAriseMain() {
 
-        WDAConfig = ConfigHelper.register(ModConfig.Type.COMMON, net.aurelj.dungeons_arise.config.WDAConfig.WDAConfigValues::new, "when-dungeons-arise-common.toml");
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        STStructures.DEFERRED_REGISTRY_STRUCTURE.register(modEventBus);
+
+    }
+
+        /* WDAConfig = ConfigHelper.register(ModConfig.Type.COMMON, net.aurelj.dungeons_arise.config.WDAConfig.WDAConfigValues::new, "when-dungeons-arise-common.toml");
 
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         WDAStructures.DEFERRED_REGISTRY_STRUCTURE.register(modEventBus);
@@ -641,5 +646,5 @@ public class DungeonsAriseMain {
         else{
             configuredStructureToBiomeMultiMap.put(configuredStructureFeature, biomeRegistryKey);
         }
-    }
+    } */
 }

@@ -32,11 +32,11 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.feature.StructureFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.JigsawConfiguration;
-import net.minecraft.world.level.levelgen.feature.structures.JigsawPlacement;
 import net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece;
 import net.minecraft.world.level.levelgen.structure.PostPlacementProcessor;
 import net.minecraft.world.level.levelgen.structure.pieces.PieceGenerator;
 import net.minecraft.world.level.levelgen.structure.pieces.PieceGeneratorSupplier;
+import net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement;
 import net.minecraftforge.event.world.StructureSpawnListGatherEvent;
 
 import java.util.Optional;
@@ -73,40 +73,27 @@ public class IllagerCorsairStructure extends StructureFeature<JigsawConfiguratio
         BlockState topBlock = columnOfBlocks.getBlock(landHeight);
 
 
-        return !topBlock.getFluidState().isEmpty()
-                && ((context.chunkPos().x > DungeonsAriseMain.WDAConfig.illagerCorsairSpawnpointSeparation.get() || context.chunkPos().x < -DungeonsAriseMain.WDAConfig.illagerCorsairSpawnpointSeparation.get())
-                && (context.chunkPos().z > DungeonsAriseMain.WDAConfig.illagerCorsairSpawnpointSeparation.get() || context.chunkPos().z < -DungeonsAriseMain.WDAConfig.illagerCorsairSpawnpointSeparation.get()));
+        return !topBlock.getFluidState().isEmpty();
     }
 
     public static Optional<PieceGenerator<JigsawConfiguration>> createPiecesGenerator(PieceGeneratorSupplier.Context<JigsawConfiguration> context) {
 
+        if (!IllagerCorsairStructure.isFeatureChunk(context)) {
+            return Optional.empty();
+        }
+
         BlockPos blockpos = context.chunkPos().getMiddleBlockPosition(0);
 
-        JigsawConfiguration newConfig = new JigsawConfiguration(
-                () -> context.registryAccess().ownedRegistryOrThrow(Registry.TEMPLATE_POOL_REGISTRY)
-                        .get(new ResourceLocation(DungeonsAriseMain.MODID, "aquatic/illager_corsair/illager_corsair_main")),
-                DungeonsAriseMain.WDAConfig.illagerCorsairSize.get()
-        );
-
-        PieceGeneratorSupplier.Context<JigsawConfiguration> newContext = new PieceGeneratorSupplier.Context<>(
-                context.chunkGenerator(),
-                context.biomeSource(),
-                context.seed(),
-                context.chunkPos(),
-                newConfig,
-                context.heightAccessor(),
-                context.validBiome(),
-                context.structureManager(),
-                context.registryAccess()
-        );
+        int topLandY = context.chunkGenerator().getFirstFreeHeight(blockpos.getX(), blockpos.getZ(), Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor());
+        blockpos = blockpos.above(topLandY + 0);
 
         Optional<PieceGenerator<JigsawConfiguration>> structurePiecesGenerator =
                 JigsawPlacement.addPieces(
-                        newContext,
+                        context,
                         PoolElementStructurePiece::new,
-                        new BlockPos(blockpos.getX(), 0, blockpos.getZ()),
+                        blockpos,
                         false,
-                        true
+                        false // heightmap placement
                 );
 
         return structurePiecesGenerator;

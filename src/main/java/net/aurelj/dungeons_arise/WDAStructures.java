@@ -105,222 +105,220 @@ public class WDAStructures {
     public static final RegistryObject<StructureFeature<JigsawConfiguration>> AVIARY = DEFERRED_REGISTRY_STRUCTURE.register("aviary", () -> (new AviaryStructure(JigsawConfiguration.CODEC)));
     public static final RegistryObject<StructureFeature<JigsawConfiguration>> ILLAGER_WINDMILL = DEFERRED_REGISTRY_STRUCTURE.register("illager_windmill", () -> (new IllagerWindmillStructure(JigsawConfiguration.CODEC)));
 
-    public static void setupStructures() {
+    /* public static void setupStructures() {
         setupMapSpacingAndLand(
-                MONASTERY.get(), /* The instance of the structure */
+                MONASTERY.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.monasterySpacing.get(),
                         DungeonsAriseMain.WDAConfig.monasterySeparation.get(),
                         182626182),
                 DungeonsAriseMain.WDAConfig.monasteryTransformsTerrain.get());
         setupMapSpacingAndLand(
-                ILLAGER_CAMPSITE.get(), /* The instance of the structure */
+                ILLAGER_CAMPSITE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.illagerCampsiteSpacing.get(),
                         DungeonsAriseMain.WDAConfig.illagerCampsiteSeparation.get(),
                         372632837),
                 DungeonsAriseMain.WDAConfig.illagerCampsiteTransformsTerrain.get());
         setupMapSpacingAndLand(
-                ABANDONED_TEMPLE.get(), /* The instance of the structure */
+                ABANDONED_TEMPLE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.abandonedTempleSpacing.get(),
                         DungeonsAriseMain.WDAConfig.abandonedTempleSeparation.get(),
                         43726253),
                 DungeonsAriseMain.WDAConfig.abandonedTempleTransformsTerrain.get());
         setupMapSpacingAndLand(
-                LIGHTHOUSE.get(), /* The instance of the structure */
+                LIGHTHOUSE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.lighthouseSpacing.get(),
                         DungeonsAriseMain.WDAConfig.lighthouseSeparation.get(),
                         283742673),
                 DungeonsAriseMain.WDAConfig.lighthouseTransformsTerrain.get());
         setupMapSpacingAndLand(
-                MUSHROOM_VILLAGE.get(), /* The instance of the structure */
+                MUSHROOM_VILLAGE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.mushroomVillageSpacing.get(),
                         DungeonsAriseMain.WDAConfig.mushroomVillageSeparation.get(),
                         573733422),
                 DungeonsAriseMain.WDAConfig.mushroomVillageTransformsTerrain.get());
         setupMapSpacingAndLand(
-                SMALL_PRAIRIE_HOUSE.get(), /* The instance of the structure */
+                SMALL_PRAIRIE_HOUSE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.smallPrairieHouseSpacing.get(),
                         DungeonsAriseMain.WDAConfig.smallPrairieHouseSeparation.get(),
                         73563524),
                 DungeonsAriseMain.WDAConfig.smallPrairieHouseTransformsTerrain.get());
         setupMapSpacingAndLand(
-                FISHING_HUT.get(), /* The instance of the structure */
+                FISHING_HUT.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.fishingHutSpacing.get(),
                         DungeonsAriseMain.WDAConfig.fishingHutSeparation.get(),
                         643827193),
                 DungeonsAriseMain.WDAConfig.fishingHutTransformsTerrain.get());
         setupMapSpacingAndLand(
-                MUSHROOM_MINES.get(), /* The instance of the structure */
+                MUSHROOM_MINES.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.mushroomMinesSpacing.get(),
                         DungeonsAriseMain.WDAConfig.mushroomMinesSeparation.get(),
                         98376172),
                 DungeonsAriseMain.WDAConfig.mushroomMinesTransformsTerrain.get());
         setupMapSpacingAndLand(
-                COLISEUM.get(), /* The instance of the structure */
+                COLISEUM.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.coliseumSpacing.get(),
                         DungeonsAriseMain.WDAConfig.coliseumSeparation.get(),
                         1626626631),
                 DungeonsAriseMain.WDAConfig.coliseumTransformsTerrain.get());
         setupMapSpacingAndLand(
-                MERCHANT_CAMPSITE.get(), /* The instance of the structure */
+                MERCHANT_CAMPSITE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.merchantCampsiteSpacing.get(),
                         DungeonsAriseMain.WDAConfig.merchantCampsiteSeparation.get(),
                         68534678),
                 DungeonsAriseMain.WDAConfig.merchantCampsiteTransformsTerrain.get());
         setupMapSpacingAndLand(
-                WISHING_WELL.get(), /* The instance of the structure */
+                WISHING_WELL.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.wishingWellSpacing.get(),
                         DungeonsAriseMain.WDAConfig.wishingWellSeparation.get(),
                         465869302),
                 DungeonsAriseMain.WDAConfig.wishingWellTransformsTerrain.get());
         setupMapSpacingAndLand(
-                ILLAGER_FORT.get(), /* The instance of the structure */
+                ILLAGER_FORT.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.illagerFortSpacing.get(),
                         DungeonsAriseMain.WDAConfig.illagerFortSeparation.get(),
                         563835947),
                 DungeonsAriseMain.WDAConfig.illagerFortTransformsTerrain.get());
         setupMapSpacingAndLand(
-                INFESTED_TEMPLE.get(), /* The instance of the structure */
+                INFESTED_TEMPLE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.infestedTempleSpacing.get(),
                         DungeonsAriseMain.WDAConfig.infestedTempleSeparation.get(),
                         297069583),
                 DungeonsAriseMain.WDAConfig.infestedTempleTransformsTerrain.get());
         setupMapSpacingAndLand(
-                HEAVENLY_RIDER.get(), /* The instance of the structure */
+                HEAVENLY_RIDER.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.heavenlyRiderSpacing.get(),
                         DungeonsAriseMain.WDAConfig.heavenlyRiderSeparation.get(),
                         337746352),
                 DungeonsAriseMain.WDAConfig.heavenlyRiderTransformsTerrain.get());
         setupMapSpacingAndLand(
-                MINING_SYSTEM.get(), /* The instance of the structure */
+                MINING_SYSTEM.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.miningSystemSpacing.get(),
                         DungeonsAriseMain.WDAConfig.miningSystemSeparation.get(),
                         263511737),
                 DungeonsAriseMain.WDAConfig.miningSystemTransformsTerrain.get());
         setupMapSpacingAndLand(
-                HEAVENLY_CONQUEROR.get(), /* The instance of the structure */
+                HEAVENLY_CONQUEROR.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.heavenlyConquerorSpacing.get(),
                         DungeonsAriseMain.WDAConfig.heavenlyConquerorSeparation.get(),
                         374552443),
                 DungeonsAriseMain.WDAConfig.heavenlyConquerorTransformsTerrain.get());
         setupMapSpacingAndLand(
-                SCORCHED_MINES.get(), /* The instance of the structure */
+                SCORCHED_MINES.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.scorchedMinesSpacing.get(),
                         DungeonsAriseMain.WDAConfig.scorchedMinesSeparation.get(),
                         1332446387),
                 DungeonsAriseMain.WDAConfig.scorchedMinesTransformsTerrain.get());
         setupMapSpacingAndLand(
-                UNDEAD_PIRATE_SHIP.get(), /* The instance of the structure */
+                UNDEAD_PIRATE_SHIP.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.undeadPirateShipSpacing.get(),
                         DungeonsAriseMain.WDAConfig.undeadPirateShipSeparation.get(),
                         952444271),
                 DungeonsAriseMain.WDAConfig.undeadPirateShipTransformsTerrain.get());
         setupMapSpacingAndLand(
-                FOUNDRY.get(), /* The instance of the structure */
+                FOUNDRY.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.foundrySpacing.get(),
                         DungeonsAriseMain.WDAConfig.foundrySeparation.get(),
                         277663662),
                 DungeonsAriseMain.WDAConfig.foundryTransformsTerrain.get());
         setupMapSpacingAndLand(
-                SMALL_BLIMP.get(), /* The instance of the structure */
+                SMALL_BLIMP.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.smallBlimpSpacing.get(),
                         DungeonsAriseMain.WDAConfig.smallBlimpSeparation.get(),
                         446553372),
                 DungeonsAriseMain.WDAConfig.smallBlimpTransformsTerrain.get());
         setupMapSpacingAndLand(
-                BANDIT_VILLAGE.get(), /* The instance of the structure */
+                BANDIT_VILLAGE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.banditVillageSpacing.get(),
                         DungeonsAriseMain.WDAConfig.banditVillageSeparation.get(),
                         1111272534),
                 DungeonsAriseMain.WDAConfig.banditVillageTransformsTerrain.get());
         setupMapSpacingAndLand(
-                TYPHON.get(), /* The instance of the structure */
+                TYPHON.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.typhonSpacing.get(),
                         DungeonsAriseMain.WDAConfig.typhonSeparation.get(),
                         357769433),
                 DungeonsAriseMain.WDAConfig.typhonTransformsTerrain.get());
         setupMapSpacingAndLand(
-                CERYNEIAN_HIND.get(), /* The instance of the structure */
+                CERYNEIAN_HIND.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.ceryneianHindSpacing.get(),
                         DungeonsAriseMain.WDAConfig.ceryneianHindSeparation.get(),
                         222266352),
                 DungeonsAriseMain.WDAConfig.ceryneianHindTransformsTerrain.get());
         setupMapSpacingAndLand(
-                HEAVENLY_CHALLENGER.get(), /* The instance of the structure */
+                HEAVENLY_CHALLENGER.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.heavenlyChallengerSpacing.get(),
                         DungeonsAriseMain.WDAConfig.heavenlyChallengerSeparation.get(),
                         826638829),
                 DungeonsAriseMain.WDAConfig.heavenlyChallengerTransformsTerrain.get());
         setupMapSpacingAndLand(
-                ILLAGER_CORSAIR.get(), /* The instance of the structure */
+                ILLAGER_CORSAIR.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.illagerCorsairSpacing.get(),
                         DungeonsAriseMain.WDAConfig.illagerCorsairSeparation.get(),
                         777463524),
                 DungeonsAriseMain.WDAConfig.illagerCorsairTransformsTerrain.get());
         setupMapSpacingAndLand(
-                ILLAGER_GALLEY.get(), /* The instance of the structure */
+                ILLAGER_GALLEY.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.illagerGalleySpacing.get(),
                         DungeonsAriseMain.WDAConfig.illagerGalleySeparation.get(),
                         995537231),
                 DungeonsAriseMain.WDAConfig.illagerGalleyTransformsTerrain.get());
         setupMapSpacingAndLand(
-                MUSHROOM_HOUSE.get(), /* The instance of the structure */
+                MUSHROOM_HOUSE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.mushroomHouseSpacing.get(),
                         DungeonsAriseMain.WDAConfig.mushroomHouseSeparation.get(),
                         347766182),
                 DungeonsAriseMain.WDAConfig.mushroomHouseTransformsTerrain.get());
         setupMapSpacingAndLand(
-                GIANT_MUSHROOM.get(), /* The instance of the structure */
+                GIANT_MUSHROOM.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.giantMushroomSpacing.get(),
                         DungeonsAriseMain.WDAConfig.giantMushroomSeparation.get(),
                         497362534),
                 DungeonsAriseMain.WDAConfig.giantMushroomTransformsTerrain.get());
         setupMapSpacingAndLand(
-                SHIRAZ_PALACE.get(), /* The instance of the structure */
+                SHIRAZ_PALACE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.shirazPalaceSpacing.get(),
                         DungeonsAriseMain.WDAConfig.shirazPalaceSeparation.get(),
                         888377716),
                 DungeonsAriseMain.WDAConfig.shirazPalaceTransformsTerrain.get());
         setupMapSpacingAndLand(
-                PLAGUE_ASYLUM.get(), /* The instance of the structure */
+                PLAGUE_ASYLUM.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.plagueAsylumSpacing.get(),
                         DungeonsAriseMain.WDAConfig.plagueAsylumSeparation.get(),
                         637271616),
                 DungeonsAriseMain.WDAConfig.plagueAsylumTransformsTerrain.get());
         setupMapSpacingAndLand(
-                BANDIT_TOWERS.get(), /* The instance of the structure */
+                BANDIT_TOWERS.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.banditTowersSpacing.get(),
                         DungeonsAriseMain.WDAConfig.banditTowersSeparation.get(),
                         1577726152),
                 DungeonsAriseMain.WDAConfig.banditTowersTransformsTerrain.get());
         setupMapSpacingAndLand(
-                THORNBORN_TOWERS.get(), /* The instance of the structure */
+                THORNBORN_TOWERS.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.thornbornTowersSpacing.get(),
                         DungeonsAriseMain.WDAConfig.thornbornTowersSeparation.get(),
                         292377166),
                 DungeonsAriseMain.WDAConfig.thornbornTowersTransformsTerrain.get());
         setupMapSpacingAndLand(
-                JUNGLE_TREE_HOUSE.get(), /* The instance of the structure */
+                JUNGLE_TREE_HOUSE.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.jungleTreeHouseSpacing.get(),
                         DungeonsAriseMain.WDAConfig.jungleTreeHouseSeparation.get(),
                         240573269),
                 DungeonsAriseMain.WDAConfig.jungleTreeHouseTransformsTerrain.get());
         setupMapSpacingAndLand(
-                AVIARY.get(), /* The instance of the structure */
+                AVIARY.get(), // Instance
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.aviarySpacing.get(),
                         DungeonsAriseMain.WDAConfig.aviarySeparation.get(),
                         492512635),
                 DungeonsAriseMain.WDAConfig.aviaryTransformsTerrain.get());
         setupMapSpacingAndLand(
-                ILLAGER_WINDMILL.get(), /* The instance of the structure */
+                ILLAGER_WINDMILL.get(),
                 new StructureFeatureConfiguration(DungeonsAriseMain.WDAConfig.illagerWindmillSpacing.get(),
                         DungeonsAriseMain.WDAConfig.illagerWindmillSeparation.get(),
                         277746726),
                 DungeonsAriseMain.WDAConfig.illagerWindmillTransformsTerrain.get());
+    } */
 
-        // Add more structures here and so on
-    }
-
-    public static <F extends StructureFeature<?>> void setupMapSpacingAndLand(
+    /* public static <F extends StructureFeature<?>> void setupMapSpacingAndLand(
             F structure,
             StructureFeatureConfiguration structureFeatureConfiguration,
             boolean transformSurroundingLand)
@@ -352,5 +350,5 @@ public class WDAStructures {
                 structureMap.put(structure, structureFeatureConfiguration);
             }
         });
-    }
+    } */
 }

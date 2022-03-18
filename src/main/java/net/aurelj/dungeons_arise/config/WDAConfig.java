@@ -1,4 +1,4 @@
-package net.aurelj.dungeons_arise.config;
+/* package net.aurelj.dungeons_arise.config;
 
 import net.aurelj.dungeons_arise.config.ConfigHelper.ConfigValueListener;
 import net.minecraftforge.common.ForgeConfigSpec;
@@ -1475,3 +1475,4 @@ public class WDAConfig {
         }
     }
 }
+ */
