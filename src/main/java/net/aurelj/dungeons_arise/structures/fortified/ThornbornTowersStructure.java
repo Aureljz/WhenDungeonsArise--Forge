@@ -85,13 +85,13 @@ public class ThornbornTowersStructure extends StructureFeature<JigsawConfigurati
         BlockPos blockpos = context.chunkPos().getMiddleBlockPosition(0);
 
         int topLandY = context.chunkGenerator().getFirstFreeHeight(blockpos.getX(), blockpos.getZ(), Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor());
-        blockpos = blockpos.above(132);
+        blockpos = blockpos.above(125);
 
         Optional<PieceGenerator<JigsawConfiguration>> structurePiecesGenerator =
                 JigsawPlacement.addPieces(
                         context,
                         PoolElementStructurePiece::new,
-                        new BlockPos(blockpos.getX(), 132, blockpos.getZ()),
+                        blockpos,
                         false,
                         false
                 );

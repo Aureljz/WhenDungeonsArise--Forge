@@ -3,7 +3,7 @@
 
   "config": {
     "start_pool": "dungeons_arise:bandit/bandit_towers/bandit_towers_start",
-    "size": 50
+    "size": 7
   },
   "biomes": "#dungeons_arise:has_structure/bandit_towers_biomes",
   "adapt_noise": false,

@@ -3,7 +3,7 @@
 
   "config": {
     "start_pool": "dungeons_arise:fungi/mushroom_mines/mushroom_mines_main",
-    "size": 10
+    "size": 7
   },
   "biomes": "#dungeons_arise:has_structure/mushroom_mines_biomes",
   "adapt_noise": true,

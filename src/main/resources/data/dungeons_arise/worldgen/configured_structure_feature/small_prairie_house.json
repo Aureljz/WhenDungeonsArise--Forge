@@ -3,7 +3,7 @@
 
   "config": {
     "start_pool": "dungeons_arise:prairie/small_prairie_house/small_prairie_house_start",
-    "size": 10
+    "size": 7
   },
   "biomes": "#dungeons_arise:has_structure/small_prairie_house_biomes",
   "adapt_noise": true,

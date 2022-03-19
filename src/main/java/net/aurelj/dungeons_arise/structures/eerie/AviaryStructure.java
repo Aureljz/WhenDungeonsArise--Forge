@@ -86,7 +86,7 @@ public class AviaryStructure extends StructureFeature<JigsawConfiguration> {
         BlockPos blockpos = context.chunkPos().getMiddleBlockPosition(0);
 
         int topLandY = context.chunkGenerator().getFirstFreeHeight(blockpos.getX(), blockpos.getZ(), Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor());
-        blockpos = blockpos.above(topLandY + 32);
+        blockpos = blockpos.above(topLandY + 38);
 
         Optional<PieceGenerator<JigsawConfiguration>> structurePiecesGenerator =
                 JigsawPlacement.addPieces(
