@@ -3,7 +3,7 @@
 
   "config": {
     "start_pool": "dungeons_arise:prairie/illager_windmill/illager_windmill_start",
-    "size": 2
+    "size": 5
   },
   "biomes": "#dungeons_arise:has_structure/illager_windmill_biomes",
   "adapt_noise": false,

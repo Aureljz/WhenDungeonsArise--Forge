@@ -3,7 +3,7 @@
 
   "config": {
     "start_pool": "dungeons_arise:aquatic/typhon/typhon_start",
-    "size": 2
+    "size": 10
   },
   "biomes": "#dungeons_arise:has_structure/typhon_biomes",
   "adapt_noise": false,

@@ -3,7 +3,7 @@
 
   "config": {
     "start_pool": "dungeons_arise:eerie/heavenly_conqueror/heavenly_conqueror_main",
-    "size": 2
+    "size": 20
   },
   "biomes": "#dungeons_arise:has_structure/heavenly_conqueror_biomes",
   "adapt_noise": false,

@@ -3,7 +3,7 @@
 
   "config": {
     "start_pool": "dungeons_arise:fungi/mushroom_house/mushroom_house_start",
-    "size": 2
+    "size": 10
   },
   "biomes": "#dungeons_arise:has_structure/mushroom_house_biomes",
   "adapt_noise": false,
