@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:shiraz_palace",
 
   "config": {
     "start_pool": "dungeons_arise:desertic/shiraz_palace/shiraz_palace_start",

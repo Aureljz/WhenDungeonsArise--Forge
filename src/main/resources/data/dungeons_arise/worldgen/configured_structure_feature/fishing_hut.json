@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:fishing_hut",
 
   "config": {
     "start_pool": "dungeons_arise:prairie/fishing_hut/fishing_hut_main",

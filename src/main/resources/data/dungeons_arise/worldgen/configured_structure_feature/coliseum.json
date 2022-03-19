@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:coliseum",
 
   "config": {
     "start_pool": "dungeons_arise:prairie/coliseum/coliseum_start",

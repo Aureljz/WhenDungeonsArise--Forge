@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:thornborn_towers",
 
   "config": {
     "start_pool": "dungeons_arise:fortified/thornborn_towers/thornborn_towers_start",

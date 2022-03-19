@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:illager_windmill",
 
   "config": {
     "start_pool": "dungeons_arise:prairie/illager_windmill/illager_windmill_start",

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:heavenly_challenger",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 826638829,
+    "spacing": 340,
+    "separation": 290,
+    "type": "minecraft:random_spread"
+  }
+}

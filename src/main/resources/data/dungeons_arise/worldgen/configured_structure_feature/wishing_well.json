@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:wishing_well",
 
   "config": {
     "start_pool": "dungeons_arise:prairie/wishing_well/wishing_well_start",

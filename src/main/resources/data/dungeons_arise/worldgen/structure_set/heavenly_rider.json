@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:heavenly_rider",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 337746352,
+    "spacing": 180,
+    "separation": 120,
+    "type": "minecraft:random_spread"
+  }
+}

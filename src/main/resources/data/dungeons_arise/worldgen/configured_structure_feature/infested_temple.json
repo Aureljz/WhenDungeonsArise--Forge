@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:infested_temple",
 
   "config": {
     "start_pool": "dungeons_arise:haunted/infested_temple/infested_temple_start",

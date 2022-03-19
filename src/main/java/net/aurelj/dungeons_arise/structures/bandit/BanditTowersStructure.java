@@ -73,42 +73,26 @@ public class BanditTowersStructure extends StructureFeature<JigsawConfiguration>
         BlockState topBlock = columnOfBlocks.getBlock(landHeight);
 
 
-        return topBlock.getFluidState().isEmpty()
-                && ((context.chunkPos().x > DungeonsAriseMain.WDAConfig.banditTowersSpawnpointSeparation.get() || context.chunkPos().x < -DungeonsAriseMain.WDAConfig.banditTowersSpawnpointSeparation.get())
-                && (context.chunkPos().z > DungeonsAriseMain.WDAConfig.banditTowersSpawnpointSeparation.get() || context.chunkPos().z < -DungeonsAriseMain.WDAConfig.banditTowersSpawnpointSeparation.get()));
+        return topBlock.getFluidState().isEmpty();
     }
 
     public static Optional<PieceGenerator<JigsawConfiguration>> createPiecesGenerator(PieceGeneratorSupplier.Context<JigsawConfiguration> context) {
 
+        if (!BanditTowersStructure.isFeatureChunk(context)) {
+            return Optional.empty();
+        }
+
         BlockPos blockpos = context.chunkPos().getMiddleBlockPosition(0);
 
-        int heightmapY = context.chunkGenerator().getFirstOccupiedHeight(blockpos.getX(), blockpos.getZ(), Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor());
-
-        JigsawConfiguration newConfig = new JigsawConfiguration(
-                () -> context.registryAccess().ownedRegistryOrThrow(Registry.TEMPLATE_POOL_REGISTRY)
-                        .get(new ResourceLocation(DungeonsAriseMain.MODID, "bandit/bandit_towers/bandit_towers_start")),
-                DungeonsAriseMain.WDAConfig.banditTowersSize.get()
-        );
-
-        PieceGeneratorSupplier.Context<JigsawConfiguration> newContext = new PieceGeneratorSupplier.Context<>(
-                context.chunkGenerator(),
-                context.biomeSource(),
-                context.seed(),
-                context.chunkPos(),
-                newConfig,
-                context.heightAccessor(),
-                context.validBiome(),
-                context.structureManager(),
-                context.registryAccess()
-        );
+        blockpos = blockpos.above(135);
 
         Optional<PieceGenerator<JigsawConfiguration>> structurePiecesGenerator =
                 JigsawPlacement.addPieces(
-                        newContext,
+                        context,
                         PoolElementStructurePiece::new,
-                        new BlockPos(blockpos.getX(),135, blockpos.getZ()),
+                        blockpos,
                         false,
-                        false
+                        false // heightmap placement
                 );
 
         return structurePiecesGenerator;

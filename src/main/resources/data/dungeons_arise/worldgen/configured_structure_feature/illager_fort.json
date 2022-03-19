@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:illager_fort",
 
   "config": {
     "start_pool": "dungeons_arise:fortified/illager_fort/illager_fort_main",

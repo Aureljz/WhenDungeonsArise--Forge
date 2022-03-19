@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:lighthouse",
 
   "config": {
     "start_pool": "dungeons_arise:enigmatic/lighthouse/lighthouse_start",

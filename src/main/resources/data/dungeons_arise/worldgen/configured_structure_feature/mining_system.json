@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:mining_system",
 
   "config": {
     "start_pool": "dungeons_arise:underworld/mining_system/mining_system_main",

@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:giant_mushroom",
 
   "config": {
     "start_pool": "dungeons_arise:fungi/giant_mushroom/giant_mushroom_start",

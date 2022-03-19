@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:coliseum",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1626626631,
+    "spacing": 200,
+    "separation": 180,
+    "type": "minecraft:random_spread"
+  }
+}

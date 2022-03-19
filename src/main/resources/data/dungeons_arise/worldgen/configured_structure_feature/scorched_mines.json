@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:scorched_mines",
 
   "config": {
     "start_pool": "dungeons_arise:underworld/scorched_mines/scorched_mines_start",

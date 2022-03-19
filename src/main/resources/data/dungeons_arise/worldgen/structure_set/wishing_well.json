@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:wishing_well",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 465869302,
+    "spacing": 40,
+    "separation": 30,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:bandit_towers",
 
   "config": {
     "start_pool": "dungeons_arise:bandit/bandit_towers/bandit_towers_start",

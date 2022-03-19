@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:typhon",
 
   "config": {
     "start_pool": "dungeons_arise:aquatic/typhon/typhon_start",

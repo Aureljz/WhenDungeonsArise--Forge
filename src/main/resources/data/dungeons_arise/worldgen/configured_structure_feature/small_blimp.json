@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:small_blimp",
 
   "config": {
     "start_pool": "dungeons_arise:enigmatic/small_blimp/small_blimp_start",

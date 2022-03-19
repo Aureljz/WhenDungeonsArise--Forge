@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:heavenly_conqueror",
 
   "config": {
     "start_pool": "dungeons_arise:eerie/heavenly_conqueror/heavenly_conqueror_main",

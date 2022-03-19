@@ -85,7 +85,7 @@ public class IllagerCorsairStructure extends StructureFeature<JigsawConfiguratio
         BlockPos blockpos = context.chunkPos().getMiddleBlockPosition(0);
 
         int topLandY = context.chunkGenerator().getFirstFreeHeight(blockpos.getX(), blockpos.getZ(), Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor());
-        blockpos = blockpos.above(topLandY + 0);
+        blockpos = blockpos.above(0);
 
         Optional<PieceGenerator<JigsawConfiguration>> structurePiecesGenerator =
                 JigsawPlacement.addPieces(
@@ -93,7 +93,7 @@ public class IllagerCorsairStructure extends StructureFeature<JigsawConfiguratio
                         PoolElementStructurePiece::new,
                         blockpos,
                         false,
-                        false // heightmap placement
+                        true // heightmap placement
                 );
 
         return structurePiecesGenerator;

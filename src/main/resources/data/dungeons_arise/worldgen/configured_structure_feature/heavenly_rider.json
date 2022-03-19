@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:heavenly_rider",
 
   "config": {
     "start_pool": "dungeons_arise:eerie/heavenly_rider/heavenly_rider_main",

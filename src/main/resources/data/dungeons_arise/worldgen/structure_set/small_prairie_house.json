@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:small_prairie_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 73563524,
+    "spacing": 25,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

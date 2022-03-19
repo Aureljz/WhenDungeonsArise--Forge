@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:mining_system",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 263511737,
+    "spacing": 90,
+    "separation": 60,
+    "type": "minecraft:random_spread"
+  }
+}

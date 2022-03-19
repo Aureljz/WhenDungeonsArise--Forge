@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:abandoned_temple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 43726253,
+    "spacing": 30,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

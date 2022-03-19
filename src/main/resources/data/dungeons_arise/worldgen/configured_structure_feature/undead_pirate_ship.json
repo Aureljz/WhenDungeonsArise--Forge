@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:undead_pirate_ship",
 
   "config": {
     "start_pool": "dungeons_arise:aquatic/undead_pirate_ship/undead_pirate_ship_main",

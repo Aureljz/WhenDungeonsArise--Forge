@@ -73,40 +73,25 @@ public class MushroomHouseStructure extends StructureFeature<JigsawConfiguration
         BlockState topBlock = columnOfBlocks.getBlock(landHeight);
 
 
-        return topBlock.getFluidState().isEmpty()
-                && ((context.chunkPos().x > DungeonsAriseMain.WDAConfig.mushroomHouseSpawnpointSeparation.get() || context.chunkPos().x < -DungeonsAriseMain.WDAConfig.mushroomHouseSpawnpointSeparation.get())
-                && (context.chunkPos().z > DungeonsAriseMain.WDAConfig.mushroomHouseSpawnpointSeparation.get() || context.chunkPos().z < -DungeonsAriseMain.WDAConfig.mushroomHouseSpawnpointSeparation.get()));
+        return topBlock.getFluidState().isEmpty();
     }
 
     public static Optional<PieceGenerator<JigsawConfiguration>> createPiecesGenerator(PieceGeneratorSupplier.Context<JigsawConfiguration> context) {
 
+        if (!MushroomHouseStructure.isFeatureChunk(context)) {
+            return Optional.empty();
+        }
+
         BlockPos blockpos = context.chunkPos().getMiddleBlockPosition(0);
 
-        int heightmapY = context.chunkGenerator().getFirstOccupiedHeight(blockpos.getX(), blockpos.getZ(), Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor());
-
-        JigsawConfiguration newConfig = new JigsawConfiguration(
-                () -> context.registryAccess().ownedRegistryOrThrow(Registry.TEMPLATE_POOL_REGISTRY)
-                        .get(new ResourceLocation(DungeonsAriseMain.MODID, "fungi/mushroom_house/mushroom_house_start")),
-                DungeonsAriseMain.WDAConfig.mushroomHouseSize.get()
-        );
-
-        PieceGeneratorSupplier.Context<JigsawConfiguration> newContext = new PieceGeneratorSupplier.Context<>(
-                context.chunkGenerator(),
-                context.biomeSource(),
-                context.seed(),
-                context.chunkPos(),
-                newConfig,
-                context.heightAccessor(),
-                context.validBiome(),
-                context.structureManager(),
-                context.registryAccess()
-        );
+        int topLandY = context.chunkGenerator().getFirstFreeHeight(blockpos.getX(), blockpos.getZ(), Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor());
+        blockpos = blockpos.above(0);
 
         Optional<PieceGenerator<JigsawConfiguration>> structurePiecesGenerator =
                 JigsawPlacement.addPieces(
-                        newContext,
+                        context,
                         PoolElementStructurePiece::new,
-                        new BlockPos(blockpos.getX(), 0, blockpos.getZ()),
+                        blockpos,
                         false,
                         true
                 );

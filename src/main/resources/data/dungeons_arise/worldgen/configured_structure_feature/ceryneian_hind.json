@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:ceryneian_hind",
 
   "config": {
     "start_pool": "dungeons_arise:desertic/ceryneian_hind/ceryneian_hind_start",

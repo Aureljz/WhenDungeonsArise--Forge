@@ -47,7 +47,6 @@ import com.google.common.collect.HashMultimap;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMultimap;
 import com.mojang.serialization.Codec;
-import net.aurelj.dungeons_arise.config.ConfigHelper;
 import net.aurelj.dungeons_arise.structures.aquatic.IllagerCorsairStructure;
 import net.aurelj.dungeons_arise.structures.aquatic.IllagerGalleyStructure;
 import net.aurelj.dungeons_arise.structures.aquatic.TyphonStructure;
@@ -88,10 +87,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.FlatLevelSource;
-import net.minecraft.world.level.levelgen.StructureSettings;
 import net.minecraft.world.level.levelgen.feature.ConfiguredStructureFeature;
 import net.minecraft.world.level.levelgen.feature.StructureFeature;
-import net.minecraft.world.level.levelgen.feature.configurations.StructureFeatureConfiguration;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -118,7 +115,7 @@ public class DungeonsAriseMain {
     public DungeonsAriseMain() {
 
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        STStructures.DEFERRED_REGISTRY_STRUCTURE.register(modEventBus);
+        WDAStructures.DEFERRED_REGISTRY_STRUCTURE.register(modEventBus);
 
     }
 

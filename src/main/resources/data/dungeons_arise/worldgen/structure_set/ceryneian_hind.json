@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:ceryneian_hind",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 222266352,
+    "spacing": 80,
+    "separation": 70,
+    "type": "minecraft:random_spread"
+  }
+}

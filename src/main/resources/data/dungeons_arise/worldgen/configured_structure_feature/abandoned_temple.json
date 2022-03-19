@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "dungeons_arise:abandoned_temple",
 
   "config": {
     "start_pool": "dungeons_arise:fortified/abandoned_temple/abandoned_temple_start",

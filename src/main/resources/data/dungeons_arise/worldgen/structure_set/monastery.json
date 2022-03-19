@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:monastery",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 182626182,
+    "spacing": 150,
+    "separation": 90,
+    "type": "minecraft:random_spread"
+  }
+}
