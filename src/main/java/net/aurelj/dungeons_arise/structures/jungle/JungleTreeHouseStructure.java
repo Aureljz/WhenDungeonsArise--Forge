@@ -85,7 +85,7 @@ public class JungleTreeHouseStructure extends StructureFeature<JigsawConfigurati
         BlockPos blockpos = context.chunkPos().getMiddleBlockPosition(0);
 
         int topLandY = context.chunkGenerator().getFirstFreeHeight(blockpos.getX(), blockpos.getZ(), Heightmap.Types.WORLD_SURFACE_WG, context.heightAccessor());
-        blockpos = blockpos.above(topLandY + 60);
+        blockpos = blockpos.above(0);
 
         Optional<PieceGenerator<JigsawConfiguration>> structurePiecesGenerator =
                 JigsawPlacement.addPieces(
