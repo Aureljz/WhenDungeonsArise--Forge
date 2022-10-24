@@ -11,8 +11,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 12,
-                "max": 18
+                "min": 3,
+                "max": 6
               }
             }
           ]
@@ -109,10 +109,7 @@
       ]
     },
     {
-      "rolls": {
-        "min": 1,
-        "max": 2
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -121,21 +118,22 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4,
-                "max": 8
+                "min": 3,
+                "max": 5
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
+          "weight": 2,
           "name": "minecraft:gold_ingot",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 12,
-                "max": 24
+                "min": 8,
+                "max": 12
               }
             }
           ]
@@ -148,8 +146,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 16,
-                "max": 24
+                "min": 12,
+                "max": 20
               }
             }
           ]

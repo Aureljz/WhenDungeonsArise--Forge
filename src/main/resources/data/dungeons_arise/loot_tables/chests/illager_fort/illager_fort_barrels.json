@@ -113,7 +113,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 5
+          "weight": 8
         },
         {
           "type": "minecraft:item",
@@ -158,10 +158,7 @@
       ]
     },
     {
-      "rolls": {
-        "min": 1,
-        "max": 2
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -178,26 +175,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_ingot",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:emerald",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 4,
-                "max": 16
+                "max": 6
               }
             }
           ]
@@ -209,8 +193,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 12,
-                "max": 16
+                "min": 3,
+                "max": 6
               }
             }
           ]
