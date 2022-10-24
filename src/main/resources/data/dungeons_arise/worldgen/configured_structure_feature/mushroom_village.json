@@ -2,11 +2,11 @@
   "type": "dungeons_arise:mushroom_village",
 
   "config": {
-    "start_pool": "dungeons_arise:fungi/mushroom_village/mushroom_village_streets",
+    "start_pool": "dungeons_arise:fungi/mushroom_village/mushroom_village_start",
     "size": 6
   },
   "biomes": "#dungeons_arise:has_structure/mushroom_village_biomes",
-  "adapt_noise": false,
+  "adapt_noise": true,
   "spawn_overrides": {
 
   }

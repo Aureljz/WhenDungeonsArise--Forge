@@ -210,7 +210,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:shiraz_palace",
+              "destination": "dungeons_arise:explorer_maps/shiraz_palace",
               "decoration": "target_x",
               "zoom": 2,
               "skip_existing_chunks": false

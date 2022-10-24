@@ -73,7 +73,11 @@ public class HeavenlyChallengerStructure extends StructureFeature<JigsawConfigur
         BlockState topBlock = columnOfBlocks.getBlock(landHeight);
 
 
-        return topBlock.getFluidState().isEmpty();
+        return topBlock.getFluidState().isEmpty()
+                && context.chunkPos().z > 100
+                && context.chunkPos().x > 100
+                && -context.chunkPos().z < -100
+                && -context.chunkPos().x < -100;
     }
 
     public static Optional<PieceGenerator<JigsawConfiguration>> createPiecesGenerator(PieceGeneratorSupplier.Context<JigsawConfiguration> context) {

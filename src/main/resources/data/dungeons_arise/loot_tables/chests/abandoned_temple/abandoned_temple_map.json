@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:monastery",
+              "destination": "dungeons_arise:explorer_maps/monastery",
               "decoration": "target_x",
               "zoom": 2,
               "skip_existing_chunks": false
@@ -23,7 +23,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:mining_system",
+              "destination": "dungeons_arise:explorer_maps/mining_system",
               "decoration": "target_x",
               "zoom": 2,
               "skip_existing_chunks": false
@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:thornborn_towers",
+              "destination": "dungeons_arise:explorer_maps/thornborn_towers",
               "decoration": "blue_marker",
               "zoom": 2,
               "skip_existing_chunks": false

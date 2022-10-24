@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:infested_temple",
+              "destination": "dungeons_arise:explorer_maps/infested_temple",
               "decoration": "target_x",
               "zoom": 2,
               "skip_existing_chunks": false
@@ -23,7 +23,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:thornborn_towers",
+              "destination": "dungeons_arise:explorer_maps/thornborn_towers",
               "decoration": "target_x",
               "zoom": 2,
               "skip_existing_chunks": false

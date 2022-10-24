@@ -25,13 +25,16 @@ import com.mojang.serialization.Codec;
 import net.aurelj.dungeons_arise.DungeonsAriseMain;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.features.EndFeatures;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.NoiseColumn;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.levelgen.feature.EndIslandFeature;
 import net.minecraft.world.level.levelgen.feature.StructureFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.JigsawConfiguration;
+import net.minecraft.world.level.levelgen.structure.BuiltinStructureSets;
 import net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement;
 import net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece;
 import net.minecraft.world.level.levelgen.structure.PostPlacementProcessor;
@@ -74,7 +77,11 @@ public class AviaryStructure extends StructureFeature<JigsawConfiguration> {
 
 
         return topBlock.getFluidState().isEmpty()
-                && landHeight > 45;
+                && landHeight > 45
+                && context.chunkPos().z > 150
+                && context.chunkPos().x > 150
+                && -context.chunkPos().z < -150
+                && -context.chunkPos().x < -150;
     }
 
     public static Optional<PieceGenerator<JigsawConfiguration>> createPiecesGenerator(PieceGeneratorSupplier.Context<JigsawConfiguration> context) {

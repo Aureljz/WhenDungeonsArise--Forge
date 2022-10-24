@@ -15,7 +15,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:mining_system",
+              "destination": "dungeons_arise:explorer_maps/mining_system",
               "decoration": "red_marker",
               "zoom": 2,
               "skip_existing_chunks": false

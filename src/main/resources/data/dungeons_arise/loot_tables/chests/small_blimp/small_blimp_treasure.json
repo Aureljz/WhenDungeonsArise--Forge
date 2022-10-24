@@ -15,7 +15,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:plague_asylum",
+              "destination": "dungeons_arise:explorer_maps/plague_asylum",
               "decoration": "banner_red",
               "zoom": 2,
               "skip_existing_chunks": false
@@ -29,7 +29,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:mining_system",
+              "destination": "dungeons_arise:explorer_maps/mining_system",
               "decoration": "banner_red",
               "zoom": 2,
               "skip_existing_chunks": false

@@ -15,7 +15,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:mushroom_mines",
+              "destination": "dungeons_arise:explorer_maps/mushroom_mines",
               "decoration": "banner_red",
               "zoom": 2,
               "skip_existing_chunks": false

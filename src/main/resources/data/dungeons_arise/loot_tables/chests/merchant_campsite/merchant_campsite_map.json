@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:illager_campsite",
+              "destination": "dungeons_arise:explorer_maps/illager_campsite",
               "decoration": "target_x",
               "zoom": 2,
               "skip_existing_chunks": false
@@ -23,7 +23,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:illager_fort",
+              "destination": "dungeons_arise:explorer_maps/illager_fort",
               "decoration": "target_x",
               "zoom": 2,
               "skip_existing_chunks": false

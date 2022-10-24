@@ -15,7 +15,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "dungeons_arise:foundry",
+              "destination": "dungeons_arise:explorer_maps/foundry",
               "decoration": "target_x",
               "zoom": 2,
               "skip_existing_chunks": false

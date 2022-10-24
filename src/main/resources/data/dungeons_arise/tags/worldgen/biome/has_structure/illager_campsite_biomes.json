@@ -4,6 +4,6 @@
     "minecraft:plains",
     "minecraft:meadow",
     "minecraft:sunflower_plains",
-    "#minecraft:is_hills"
+    "#minecraft:is_hill"
   ]
 }
